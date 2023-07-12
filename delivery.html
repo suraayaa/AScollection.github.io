@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set the background color and font styles */
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        main p {
+            margin-bottom: 20px;
+        }
+
+        /* Dropdown table styles */
+        .dropdown-wrapper {
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .dropdown-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-title .title-bold {
+            margin-right: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+        }
+
+        .dropdown-wrapper.opened .dropdown-title .icon {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-wrapper.opened .dropdown-content {
+            display: block;
+        }
+
+        /* Table styles */
+        .dropdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .dropdown-content th,
+        .dropdown-content td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        .dropdown-content th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Delivery </h1>
+    </header>
+
+    <main>
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">Malaysia Delivery</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Option</th>
+                        <th>Delivery Time</th>
+                        <th>Additional Information</th>
+                    </tr>
+                    <tr>
+                        <td>Standard - RM10 or FREE RM125+</td>
+                        <td>Peninsula: 3-4 business days<br>East Malaysia: 3-6 business days</td>
+                        <td>Signature required on delivery</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">Deliver to Store - RM5 or FREE on orders RM90+</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Option</th>
+                        <th>Delivery Time</th>
+                        <th>Additional Information</th>
+                    </tr>
+                    <tr>
+                        <td>Deliver to Store</td>
+                        <td>Peninsula: 2-3 business days<br>East Malaysia: 2-5 business days</td>
+                        <td>Orders placed on public holidays will be processed the next working day<br>Please note all Deliver to Store orders are processed and delivered from our warehouse to your selected store for collection<br>Uncollected orders will be cancelled and refunded after 30 days</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">Store to Door - FREE</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Option</th>
+                        <th>Delivery Time</th>
+                        <th>Additional Information</th>
+                    </tr>
+                    <tr>
+                        <td>Store to Door</td>
+                        <td>Peninsula: 2-3 business days<br>East Malaysia: 2-5 business days</td>
+                        <td>Signature required on delivery<br>Standard domestic shipping only. We’re unable to offer international or express shipping.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">International Delivery</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Option</th>
+                        <th>Delivery Time</th>
+                        <th>Additional Information</th>
+                    </tr>
+                    <tr>
+                        <td>International Delivery</td>
+                        <td>N/A</td>
+                        <td>Unfortunately, we are unable to offer International delivery for orders placed via our Malaysia website<br>Please visit our AU, USA, or Singapore site to place an order for international delivery</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">Delivery FAQs</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                    <tr>
+                        <td>I haven’t received a shipping confirmation or tracking number for my order. Who do I contact?</td>
+                        <td>The quickest way to get in touch is via the online chat widget at the bottom of the AS Collection homepage.</td>
+                    </tr>
+                    <tr>
+                        <td>How are you looking after your employees in the Distribution Centre?</td>
+                        <td>Ensuring a safe working environment for our Distribution Centre team members is our top priority. We have taken strong measures to look after our people and the safe shipping of your product. These include providing hand sanitizers and personal protective equipment, high hygiene and cleaning standards, and split working hours to reduce employee contact.</td>
+                    </tr>
+                    <tr>
+                        <td>Is delivery to PO Boxes available?</td>
+                        <td>No, unfortunately, orders cannot be delivered to PO Boxes.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">Delivery Terms &amp; Conditions</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Terms &amp; Conditions</th>
+                    </tr>
+                    <tr>
+                        <td>Receiving your order: Please note that orders require a signature on delivery. If you are not available to sign for your order, the postal carrier will leave a note with instructions for pick up from a designated post office. Delivery is subject to the terms of the relevant postal service.<br>While we do everything we can to ensure your order is delivered in a timely manner, we will not be liable for any loss or damage incurred by any person as a result of a delay caused by our carrier that we have no control over or by any event which is out of our reasonable control or foresight, including but not limited to any delay caused by an incorrect delivery address being provided to us.<br>Out of stock items: If any items in your order are out of stock at the time your order is packed, we will notify you via email and refund you for those items.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="dropdown-wrapper">
+            <h2 class="dropdown-title">
+                <span class="title-bold">Store FAQs</span>
+                <span class="icon icon-arrow-up-gray-large"></span>
+            </h2>
+            <div class="dropdown-content">
+                <table>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                    <tr>
+                        <td>Which stores are currently open?</td>
+                        <td>All our stores across the AS Collection Group are open.</td>
+                    </tr>
+                    <tr>
+                        <td>How are you creating a safe environment instore?</td>
+                        <td>As always, our people and customers are our first priority. Here’s how we’re creating a safe environment for everyone:<br>- Keeping it clean: We're cleaning high-touch surfaces regularly. This includes tables, racks, handles, counters, and EFTPOS machines. We’ve also removed ‘multi-touch’ items like beauty testers and shopping bags. And we’re encouraging contactless payment where possible.<br>- Safe social distancing: Wherever possible, we’re asking you to stay 2m / 6ft away from others. We may restrict access to stores to limit the number of people to 4sqm/person. This includes fitting rooms; however, in smaller stores, we may not be able to open them at all.<br>- Being kind and considerate: Wear a face mask, stay home if you’re unwell, wash your hands regularly with soap and water for at least 20 seconds, and cover coughs and sneezes.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+    </main>
+
+    <script>
+        // Get all the dropdown wrappers
+        const dropdowns = document.querySelectorAll('.dropdown-wrapper');
+
+        // Add click event listener to each dropdown
+        dropdowns.forEach(dropdown => {
+            const title = dropdown.querySelector('.dropdown-title');
+            const content = dropdown.querySelector('.dropdown-content');
+
+            // Toggle the dropdown content visibility when the title is clicked
+            title.addEventListener('click', () => {
+                dropdown.classList.toggle('opened');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="device-width, initial-scale=1.0">
+  <title>SALES</title>
+  <link rel="icon" type="image/x-icon" href="images/LOGO.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap'
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/LOGO.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-window-close" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">SALES</a></li>
+          <li><a href="men.html">MEN</a></li>
+          <li><a href="women.html">WOMEN</a></li>
+          <li><a href="services.html">CUSTOMER SERVICES</a></li>
+          <li><a href="extras.html">EXTRAS</a></li>
+        </ul>
+
+    <div class="text-box">
+      <h1> AS COLLECTION </h1>
+<br>
+      <p>Shop the sale online at AS collection and stock up on lots of great deals! Discover new marked-down favourites from all our departments; women and men.<br> <br>
+Start building your new wardrobe today, browse the AS collection sale to find the latest clothes on sale and update your wardrobe with stylish new looks.<br>
+      </p>
+      <a href="extras.html" class="hero-btn">Explore Some Outfit</a>
+    </div>
+
+
+  </section>
+
+  <!-----------------------Content---------------------->
+  <br></br>
+  <section class="about-us">
+    <div class="title-text">
+      <p><h1 style="background-color:Tomato;"> NEWS </h1></p>
+      <h1> AS Latest Announcement </h1>
+  
+        <div class="my-col">
+          <div id="slider">
+            <figure width: 1000%; margin right: 700%; animation: 15s slider infinite;>
+              <img src="images/offer.jpg" width="50" height="700">
+              <img src="images/sales.jpg" width="50" height="700">
+              <img src="images/coupon.jpg" width="50" height="700">
+              <img src="images/free.jpg" width="50" height="800">      
+            </figure>
+          </div>
+    
+<center><font size="7">Some videos for your Outfit ideas</font></center>
+
+<br><center><video width="350" height="350" controls="">
+  <source src="images/vd1.mp4" type="video/mp4"></video></br>
+<br><center><video width="350" height="350" controls="">
+  <source src="images/vd2.mp4" type="video/mp4"></video></br>
+<br><center><video width="350" height="350" controls="">
+  <source src="images/vd3.mp4" type="video/mp4"></video></br>
+<br><center><video width="350" height="350" controls="">
+  <source src="images/vd4.mp4" type="video/mp4"></video></br>
+
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+
+<hr>
+<section id="footer">
+    <img src="images/LOGO.png" class="footer-img">
+<div class="footer-row">
+<div class="footer-left">
+    <h1>Quick Links</h1> 
+    
+    <p><a target="_blank" href="file:///C:/Users/User/Downloads/AS%20COLLECTION/about.html">About Us</a></p>
+    <p><a target="_blank" href="file:///C:/Users/User/Downloads/AS%20COLLECTION/location.html">Find a Store</a></p>
+    <p><a href="file:///C:/Users/User/Downloads/AS%20COLLECTION/services.html">Services</a></p>
+    <p><a target="_blank" href="file:///C:/Users/User/Downloads/AS%20COLLECTION/delivery.html">Delivery</a></p>
+</div>
+<div class="footer-right">
+    <h1>Contact Us</h1>
+    <p>Quensbay Mall, 100, Persiaran Bayan Indah, 11900 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p> <p>Bayan Lepas, Pulau Pinang</i></p>
+    <p>www.ascollection.com.my</p>
+    <p>04-619 8989</p>
+</div>
+</div>
+<div class="social-links">
+    <a target="_blank" href="https://www.facebook.com/AScllection/"><i class="fab fa-facebook-f"></i></a>
+    <a target="_blank" href="https://twitter.com/collectionas_?s=11"><i class="fab fa-twitter"></i></a>
+    <a target="_blank" href="https://instagram.com/_.ascollection?igshid=MjEwN2IyYWYwYw=="><i class="fab fa-instagram"></i></a>
+    <p>The content of this site is © copyright-protected and is the property of AS " Aida&Azureen x Sufina&Syarina "</p>
+
+</section>
+
+
+  <!--------JavaScript for Toggle Menu-------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = () => {
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  </script>
+
+
+</body>
+
+</html>
